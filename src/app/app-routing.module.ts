@@ -1,11 +1,12 @@
-import { CompraComponent } from './pages/compra/compra.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
+
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'carrinho', component: CompraComponent }
+  { path: 'carrinho', component: CarrinhoComponent }
 ];
 
 @NgModule({

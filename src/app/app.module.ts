@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { CompraComponent } from './pages/compra/compra.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { CompraComponent } from './pages/compra/compra.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    CompraComponent
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,
