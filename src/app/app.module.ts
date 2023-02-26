@@ -7,6 +7,8 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
+import { FluxoComponent } from './componentes/fluxo/fluxo.component';
+import { EnderecoComponent } from './pages/endereco/endereco.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    CarrinhoComponent
+    CarrinhoComponent,
+    FluxoComponent,
+    EnderecoComponent
   ],
   imports: [
     BrowserModule,

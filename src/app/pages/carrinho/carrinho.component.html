@@ -1,68 +1,45 @@
 <app-navbar></app-navbar>
+
+<h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-10 px-20">Carrinho</h1>
+
+<app-fluxo></app-fluxo>
+
 <section>
-    <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-16 px-20">Carrinho</h1>
-    <div class="flex justify-center gap-[10rem]">
-        <div>
-            <p>Produtos</p>
-            <div class="flex justify-center gap-10 py-4 ">
-                <img src="assets/buque2.jpg" alt="Imagem buquê" class="w-[10rem]">
-                <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
-                    <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">Buquê de rosas</h1>
-                    <p class="text-black lg:text-[0.8rem] text-[1.3rem] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quia quas illo maiores dolor aspernatur neque possimus, itaque temporibus non quam natus sapiente totam commodi praesentium similique accusantium quidem?</p>
-                    <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R$25,00</p>
-                </div>
-            </div>
-        
-            <div class="flex justify-center gap-10 py-4">
-                <img src="assets/buque2.jpg" alt="Imagem buquê" class="w-[10rem]">
-                <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
-                    <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">Buquê de rosas</h1>
-                    <p class="text-black lg:text-[0.8rem] text-[1.3rem] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quia quas illo maiores dolor aspernatur neque possimus, itaque temporibus non quam natus sapiente totam commodi praesentium similique accusantium quidem?</p>
-                    <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R$25,00</p>
-                </div>
-            </div>
-        
-            <div class="flex justify-center gap-10 py-4">
-                <img src="assets/buque2.jpg" alt="Imagem buquê" class="w-[10rem]">
-                <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
-                    <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">Buquê de rosas</h1>
-                    <p class="text-black lg:text-[0.8rem] text-[1.3rem] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quia quas illo maiores dolor aspernatur neque possimus, itaque temporibus non quam natus sapiente totam commodi praesentium similique accusantium quidem?</p>
-                    <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R$25,00</p>
-                </div>
+    <p class="text-black lg:text-[1rem] text-[1.3rem] font-bold uppercase px-[38.4rem]">Produtos</p>
+    
+    <div>
+        <div class="flex justify-center gap-10 py-4 ">
+            <img src="assets/buque2.jpg" alt="Imagem buquê" class="w-[10rem]">
+            <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
+                <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">Buquê de rosas</h1>
+                <p class="text-black lg:text-[0.8rem] text-[1.3rem] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quia quas illo maiores dolor aspernatur neque possimus, itaque temporibus non quam natus sapiente totam commodi praesentium similique accusantium quidem?</p>
+                <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R$25,00</p>
             </div>
         </div>
-        <div>
-            <p>Endereço para entrega:</p>
-            <form>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input type="number" id="cep" name="cep" class="block py-2.5 px-0 w-[25rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>
-                    <label for="cep" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#fb6f92] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Digite o seu CEP</label>
-                </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input type="text" id="rua" name="rua" disabled class="block py-2.5 px-0 w-[25rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>
-                    <label for="rua" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#fb6f92] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Rua</label>
-                </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input type="text" id="numero" name="numero" disabled class="block py-2.5 px-0 w-[25rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>
-                    <label for="numero" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#fb6f92] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Número</label>
-                </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input type="text" id="complemento" name="complemento" disabled class="block py-2.5 px-0 w-[25rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>
-                    <label for="complemento" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#fb6f92] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Complemento</label>
-                </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input type="text" id="cidade" name="cidade" disabled class="block py-2.5 px-0 w-[25rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>
-                    <label for="cidade" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#fb6f92] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Cidade</label>
-                </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input type="text" id="estado" name="estado" disabled class="block py-2.5 px-0 w-[25rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>
-                    <label for="estado" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#fb6f92] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Estado</label>
-                </div>
-            </form>
-            <button type="button" class="text-white bg-[#fb6f92] hover:bg-[#fb6f92db] font-medium text-sm px-[2rem] py-2.5 text-center uppercase">Finalizar compra</button>
+    
+        <div class="flex justify-center gap-10 py-4">
+            <img src="assets/buque2.jpg" alt="Imagem buquê" class="w-[10rem]">
+            <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
+                <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">Buquê de rosas</h1>
+                <p class="text-black lg:text-[0.8rem] text-[1.3rem] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quia quas illo maiores dolor aspernatur neque possimus, itaque temporibus non quam natus sapiente totam commodi praesentium similique accusantium quidem?</p>
+                <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R$25,00</p>
+            </div>
+        </div>
+    
+        <div class="flex justify-center gap-10 py-4">
+            <img src="assets/buque2.jpg" alt="Imagem buquê" class="w-[10rem]">
+            <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
+                <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">Buquê de rosas</h1>
+                <p class="text-black lg:text-[0.8rem] text-[1.3rem] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quia quas illo maiores dolor aspernatur neque possimus, itaque temporibus non quam natus sapiente totam commodi praesentium similique accusantium quidem?</p>
+                <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R$25,00</p>
+            </div>
         </div>
     </div>
-    <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-5 px-[20.5rem]">Total: R$75,00</h1>
+
+    
+    <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-5 px-[38.4rem]">Total: R$75,00</h1>
+    
+    <button [routerLink]="['/endereco']" type="button" class="text-white bg-[#fb6f92] hover:bg-[#fb6f92db] font-medium text-sm px-[2rem] mx-[38.4rem] mb-[4rem] py-2.5 text-center uppercase">Confirmar</button>
     
 </section>
 <app-footer></app-footer>
