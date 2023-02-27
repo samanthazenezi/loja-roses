@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Item } from 'src/app/model/item.model';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +8,18 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  itens: Item[] = [];
+
   openClose(){
     document.getElementById('dropdown')?.classList.toggle('visivel')
   }
 
+
+  contador(itens){
+    
+    if(itens === 0){
+      itens +1
+    }
+    
+  }
 }
