@@ -23,16 +23,17 @@
 <section>
     <p class="text-black lg:text-[1rem] text-[1.3rem] font-bold uppercase px-[38.4rem]">Produtos</p>
     
-    <div *ngIf="itens.length === 0" class="px-[20rem]">
+    <div *ngIf="itens.length === 0" class="px-[20rem] py-20">
         <p>O carrinho de compras está vazio.</p>
     </div>
 
     <div>
         <div *ngFor="let item of itens" class="flex justify-center gap-10 py-4 ">
-            <img src="item.imagem" alt="item.nome" class="w-[10rem]">
+            <img src="{{item.imagem}}" alt="{{item.nome}}" class="w-[10rem]">
             <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
                 <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">{{item.nome}}</h1>
                 <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R${{item.preco}}</p>
+                <button (click)="removerProduto('')" type="button" class="max-w-[3rem] text-[#e63946] hover:text-white border border-[#e63946] hover:bg-[#e63946] font-bold text-sm px-1 py-1 text-center">X</button>
             </div>
         </div>
     
@@ -44,4 +45,5 @@
     <button [routerLink]="['/endereco']" type="button" class="text-white bg-[#fb6f92] hover:bg-[#fb6f92db] font-medium text-sm px-[2rem] mx-[38.4rem] mb-[4rem] py-2.5 text-center uppercase">Confirmar</button>
     
 </section>
+
 <app-footer></app-footer>

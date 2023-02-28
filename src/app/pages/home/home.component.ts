@@ -15,7 +15,7 @@ import { Item } from 'src/app/model/item.model';
 
 export class HomeComponent {
   
-  itens: Item[] 
+  itens: Item[] = [];
 
   constructor() {}
 
@@ -23,7 +23,29 @@ export class HomeComponent {
     
   }
 
-  addItemCarrinho(){
+  addItemCarrinho(imagem: string, nome: string, preco: string){
+    let produto: Item = {
+      imagem: imagem,
+      nome: nome,
+      preco: preco
+    }
+
+    this.itens.push(produto);
+
+    localStorage.setItem("produtos", JSON.stringify(this.itens));
+
+  }
+
+  openClose(){
+    document.getElementById('dropdown')?.classList.toggle('visivel')
+  }
+
+
+  contador(itens){
+    
+    if(itens === 0){
+      itens +1
+    }
     
   }
   
