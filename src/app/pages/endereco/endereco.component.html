@@ -2,25 +2,27 @@
 
 <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-10 px-20">Endereço de entrega</h1>
 
-<div class="py-10 px-[20rem]">
-    <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500 sm:text-base">
-        <li class="flex md:w-full items-center after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 sm:after:inline-block after:mx-6 xl:after:mx-10">
-            <span class="flex items-center after:mx-2 after:font-light after:text-gray-200">
-                <span class="hidden sm:inline-flex sm:ml-2">Carrinho</span>
+<div class="py-10 lg:px-[20rem] md:px-[10rem] px-[2rem]">
+    
+    <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500">
+        <li class="flex md:w-full items-center sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+            <span class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-gray-200">
+                Carrinho                
             </span>
         </li>
-        <li class="flex md:w-full items-center text-[#fb6f92] sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 sm:after:inline-block after:mx-6 xl:after:mx-10">
-            <span class="flex items-center after:content-['/'] after:mx-2 after:font-light after:text-gray-200">
-                <span class="hidden sm:inline-flex sm:ml-2">Endereço</span>
+        <li class="flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+            <span class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-gray-200">
+                <span class="mr-2 text-[#fb6f92]">Endereço</span>
             </span>
         </li>
         <li class="flex items-center">
-            Finalizar
+            <span class="mr-2">Finalizar</span>
         </li>
     </ol>
+
 </div>
 
-<div class="flex flex-col justify-center items-center py-[6rem]">
+<div class="flex flex-col justify-center items-center py-[6rem] px-[2rem]">
     <form [formGroup]="formEndereco" (ngSubmit)="buscarCep()">
         <div class="relative z-0 w-full mb-6 group flex">
             <input formControlName="cep" type="text" id="cep" name="cep" class="block py-2.5 px-0 w-[23rem] text-sm text-gray-900 bg-transparent border-0 border-b-2 border-[#fb6f92] appearance-none focus:outline-none peer" placeholder=" "/>

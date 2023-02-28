@@ -23,7 +23,7 @@ export class HomeComponent {
     
   }
 
-  addItemCarrinho(imagem: string, nome: string, preco: string){
+  addItemCarrinho(imagem: string, nome: string, preco: number){
     let produto: Item = {
       imagem: imagem,
       nome: nome,
@@ -36,17 +36,5 @@ export class HomeComponent {
 
   }
 
-  openClose(){
-    document.getElementById('dropdown')?.classList.toggle('visivel')
-  }
-
-
-  contador(itens){
-    
-    if(itens === 0){
-      itens +1
-    }
-    
-  }
   
 }

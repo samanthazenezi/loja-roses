@@ -14,12 +14,4 @@ export class NavbarComponent {
     document.getElementById('dropdown')?.classList.toggle('visivel')
   }
 
-
-  contador(itens){
-    
-    if(itens === 0){
-      itens +1
-    }
-    
-  }
 }

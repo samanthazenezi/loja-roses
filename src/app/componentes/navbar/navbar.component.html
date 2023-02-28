@@ -36,18 +36,11 @@
             
                         <a href="#produtos" class="text-black hover:border-b hover:border-b-[#fb6f92] px-3 py-2 text-sm font-medium">Produtos</a>
             
-                        <a href="#" class="text-black hover:border-b hover:border-b-[#fb6f92] px-3 py-2 text-sm font-medium">Contato</a>
+                        <a href="#contato" class="text-black hover:border-b hover:border-b-[#fb6f92] px-3 py-2 text-sm font-medium">Contato</a>
                     </div>
                 </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a [routerLink]="['/carrinho']" class="flex mr-6 items-center" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-[#fb6f92]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                </a>
-                <p *ngIf="itens.length != 0" >1</p>
-            </div>
+            <button [routerLink]="['/carrinho']" type="button" class="text-[#fb6f92] hover:text-white border border-[#fb6f92] hover:bg-[#fb6f92] font-bold lg:text-sm md:text-sm text-[0.8rem] px-[1rem] md:py-2.5 lg:py-2.5 py-2 text-center">Ver carrinho</button>
         </div>
     </div>
 </nav>

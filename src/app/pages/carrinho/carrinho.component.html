@@ -2,26 +2,27 @@
 
 <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-10 px-20">Carrinho</h1>
 
-<div class="py-10 px-[20rem]">
-    <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500 sm:text-base">
+<div class="py-10 lg:px-[20rem] md:px-[10rem] px-[5rem]">
+    
+    <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500">
         <li class="flex md:w-full items-center text-[#fb6f92] sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
             <span class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-gray-200">
-                <span class="hidden sm:inline-flex sm:ml-2">Carrinho</span>
+                Carrinho                
             </span>
         </li>
         <li class="flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
             <span class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-gray-200">
-                <span class="hidden sm:inline-flex sm:ml-2">Endereço</span>
+                <span class="mr-2">Endereço</span>
             </span>
         </li>
         <li class="flex items-center">
-            Finalizar
+            <span class="mr-2">Finalizar</span>
         </li>
     </ol>
+
 </div>
 
 <section>
-    <p class="text-black lg:text-[1rem] text-[1.3rem] font-bold uppercase px-[38.4rem]">Produtos</p>
     
     <div *ngIf="itens.length === 0" class="px-[20rem] py-20">
         <p>O carrinho de compras está vazio.</p>
@@ -29,10 +30,10 @@
 
     <div>
         <div *ngFor="let item of itens" class="flex justify-center gap-10 py-4 ">
-            <img src="{{item.imagem}}" alt="{{item.nome}}" class="w-[10rem]">
+            <img src="{{item.imagem}}" alt="{{item.nome}}" class="w-[10rem] lg:w-[15rem]">
             <div class="max-w-[30rem] flex flex-col gap-4 border-b border-[#fb6f92]">
                 <h1 class="text-black lg:text-[1.2rem] text-[1.3rem] font-bold uppercase">{{item.nome}}</h1>
-                <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R${{item.preco}}</p>
+                <p class="text-black lg:text-[1rem] text-[1.3rem] font-light">R${{item.preco}},00</p>
                 <button (click)="removerProduto('')" type="button" class="max-w-[3rem] text-[#e63946] hover:text-white border border-[#e63946] hover:bg-[#e63946] font-bold text-sm px-1 py-1 text-center">X</button>
             </div>
         </div>
@@ -40,9 +41,9 @@
     </div>
 
     
-    <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-5 px-[38.4rem]">Total: R$</h1>
+    <h1 class="text-black lg:text-[1.8rem] text-[1.3rem] font-bold uppercase py-5 lg:px-[38.4rem] md:px-[12rem] px-[1.4rem]">Total: R${{somaTotal()}},00 </h1>
     
-    <button [routerLink]="['/endereco']" type="button" class="text-white bg-[#fb6f92] hover:bg-[#fb6f92db] font-medium text-sm px-[2rem] mx-[38.4rem] mb-[4rem] py-2.5 text-center uppercase">Confirmar</button>
+    <button [routerLink]="['/endereco']" type="button" class="text-white bg-[#fb6f92] hover:bg-[#fb6f92db] font-medium text-sm px-[2rem] lg:mx-[38.4rem] md:mx-[12rem] mx-[1.4rem] mb-[4rem] py-2.5 text-center uppercase">Confirmar</button>
     
 </section>
 

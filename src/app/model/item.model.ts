@@ -1,5 +1,5 @@
 export class Item {
     nome: string
-    preco: string
+    preco: number
     imagem: string
 }

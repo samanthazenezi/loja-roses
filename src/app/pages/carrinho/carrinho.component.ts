@@ -36,4 +36,14 @@ export class CarrinhoComponent {
     window.location.reload();
   }
 
+  somaTotal() {
+    
+    let soma = 0
+    this.itens.forEach( x => {
+      soma = soma + x.preco
+    })
+    
+    return soma;
+  }
+
 }
